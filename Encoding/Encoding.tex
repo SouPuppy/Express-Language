@@ -4,14 +4,15 @@
 
 \begin{table}[htbp]
 \centering
-\begin{tabular}{|c|c|c|c|l|}
-\hline Index    & Hierarchy         & Binary        & Symbol & DESCRIPTION 
-\\\hline 0      & System reserved   & 0000 0000     & NULL   & 
-\\\hline 1      & System reserved   & 0000 0001     & INDENT & Indentation 
-\\\hline 2      & System reserved   & 0000 0010     & SPACE  & Space
+\begin{tabular}{|c|l|c|c|p{6cm}|}
+\hline
+Index & Hierarchy & Binary & Symbol & DESCRIPTION 
+\\\hline 0 & System reserved & 0000 0000 & NULL & 
+\\\hline 1 & System reserved & 0000 0001 & INDENT & Notation that shows the following text's depth of indentation (0 for no indentation)
+\\\hline 2 & Format & 0000 0010 & SPACE & Space = 1 space 
+\\\hline 3 & Format & 0000 0011 & TAB & Align to the next multiple of 4 spaces
 
-
-\\\hline
+\\\hline 
 \end{tabular}
 \caption{Express Encoding}
 \end{table}
